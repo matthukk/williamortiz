@@ -17,6 +17,14 @@ public final class Constants
 {
     public static class OperatorConstants
     {
-        public static final int DRIVER_CONTROLLER_PORT = 0;
+        public static final int driverControllerPort = 0;
+        public static final int operatorControllerPort = 1;
+
+        public static final int leftForwardMotorChannel = 1;
+        public static final int leftRearMotorChannel = 2;
+        public static final int rightForwardMotorChannel = 3;
+        public static final int rightRearMotorChannel = 4;
+
+        public static final int CIMMaxAmp = 60;
     }
 }
