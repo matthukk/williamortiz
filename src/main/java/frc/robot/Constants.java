@@ -6,7 +6,9 @@
 
 package frc.robot;
 
+import com.revrobotics.spark.SparkBase;
 import com.revrobotics.spark.SparkLowLevel;
+import edu.wpi.first.wpilibj.motorcontrol.Spark;
 
 /**
  * The Constants class provides a convenient place for teams to hold robot-wide numerical or boolean
@@ -23,8 +25,10 @@ public final class Constants
         public static final int leftRearMotorChannel = 2;
         public static final int rightForwardMotorChannel = 3;
         public static final int rightRearMotorChannel = 4;
-        public static final int motorMaxAmp = 60;
+        public static final int maxCurrent = 60;
         public static final SparkLowLevel.MotorType brushedType = SparkLowLevel.MotorType.kBrushed;
+        public static final SparkBase.ResetMode noReset = SparkBase.ResetMode.kNoResetSafeParameters;
+        public static final SparkBase.PersistMode persist = SparkBase.PersistMode.kPersistParameters;
     }
     public static class OperatorConstants {
         public static final int driverControllerPort = 0;
